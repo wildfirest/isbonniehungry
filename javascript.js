@@ -14,13 +14,13 @@
 
       const statusBox = document.getElementById('statusBox');
       if (totalCalories < 180) {
-        statusBox.className = 'statusRed';
+        statusBox.className = 'statusHungry';
         statusBox.innerHTML = '<h2>Bonnie is Still Hungry</h2>';
       } else if (totalCalories >= 180 && totalCalories <= 220) {
-        statusBox.className = 'statusYellow';
+        statusBox.className = 'statusMaybe';
         statusBox.innerHTML = '<h2>Bonnie Maybe Hungry</h2>';
       } else {
-        statusBox.className = 'statusGreen';
+        statusBox.className = 'statusFull';
         statusBox.innerHTML = '<h2>Bonnie is Full</h2>';
       }
     }
