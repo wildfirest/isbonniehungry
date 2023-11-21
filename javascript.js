@@ -1,25 +1,26 @@
-let totalCalories = 0;
 
-function calculateCalories(foodId, caloriePerGram) {
-    const weightInput = document.getElementById(`${foodId}-weight`);
-    const grams = parseFloat(weightInput.value);
-    const calories = grams * caloriePerGram;
-    totalCalories += calories;
-    updateStatus();
-}
+    function calculateCalories() {
+      const orijenCalories = 4.12;
+      const kitcatCalories = 0.47;
+      const royalCaninCalories = 1;
 
-function updateStatus() {
-    const statusBox = document.getElementById('status');
-    statusBox.innerHTML = '';
+      const food1Grams = parseFloat(document.getElementById('food1Input').value) || 0;
+      const food2Grams = parseFloat(document.getElementById('food2Input').value) || 0;
+      const food3Grams = parseFloat(document.getElementById('food3Input').value) || 0;
 
-    if (totalCalories < 180) {
-        statusBox.textContent = 'Still Hungry';
-        statusBox.classList.add('still-hungry');
-    } else if (totalCalories >= 180 && totalCalories <= 220) {
-        statusBox.textContent = 'Maybe';
-        statusBox.classList.add('maybe');
-    } else {
-        statusBox.textContent = 'Full';
-        statusBox.classList.add('full');
+      const totalCalories = (food1Grams * orijenCalories) + (food2Grams * kitcatCalories) + (food3Grams * royalCaninCalories);
+
+      document.getElementById('totalCalories').textContent = totalCalories.toFixed(2);
+
+      const statusBox = document.getElementById('statusBox');
+      if (totalCalories < 180) {
+        statusBox.className = 'statusRed';
+        statusBox.innerHTML = '<h2>Bonnie is Still Hungry</h2>';
+      } else if (totalCalories >= 180 && totalCalories <= 220) {
+        statusBox.className = 'statusYellow';
+        statusBox.innerHTML = '<h2>Bonnie Maybe Hungry</h2>';
+      } else {
+        statusBox.className = 'statusGreen';
+        statusBox.innerHTML = '<h2>Bonnie is Full</h2>';
+      }
     }
-}

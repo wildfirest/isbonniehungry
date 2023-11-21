@@ -1,58 +1,70 @@
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f2f2f2;
-  }
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  #banner {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-  }
+#banner {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
 
-  #food-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap
-  }
+#foodBoxes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 
-  .food-box {
-    width: 250px;
-    height: 450px;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    text-align: center;
-  }
+.foodBox {
+  max-width: 200px;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
 
-  .food-box img {
-    max-width: 80%;
-    max-height: 80%;
-  }
+.foodBox img {
+  max-width: 100%;
+  max-height: 150px;
+  margin-bottom: 10px;
+}
 
-  #status-box {
-    background-color: white;
-    text-align: center;
-    padding: 20px;
-    margin: 20px;
-  }
+#calorieCount {
+  text-align: center;
+  margin-top: 20px;
+}
 
-  .hungry {
-    background-color: red;
-    color: black
-    ;
-  }
+#statusBox {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  font-weight: bold;
+}
 
-  .maybe {
-    background-color: yellow;
-    color: black ;
-  }
+.statusRed {
+  background-color: red;
+  color: white;
+}
 
-  .full {
-    background-color: green;
-    color: black;
-  }
+.statusYellow {
+  background-color: yellow;
+  color: black;
+}
 
+.statusGreen {
+  background-color: green;
+  color: white;
+}
+
+button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
