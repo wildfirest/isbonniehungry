@@ -26,45 +26,46 @@ body {
   max-width: 200px;
   text-align: center;
   margin: 10px;
-  padding: 10px;
+  padding: 20px;
   border: 1px solid #ddd;
   background-color: #fff;
 }
 
 .foodBox img {
   max-width: 100%;
-  max-height: 150px;
-  margin-bottom: 10px;
+  max-height: 350px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 #calorieCount {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 #statusBox {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
   padding: 10px;
   font-weight: bold;
 }
 
-.statusRed {
+.statusHungry{
   background-color: red;
   color: white;
 }
 
-.statusYellow {
+.statusMaybe {
   background-color: yellow;
   color: black;
 }
 
-.statusGreen {
+.statusFull {
   background-color: green;
   color: white;
 }
 
 button {
   padding: 5px 10px;
-  cursor: pointer;
+  margin-top: 10px;
 }
