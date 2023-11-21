@@ -4,40 +4,44 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="./style.css" />  
   <script src="javascript.js"></script>
-  
+ 
   <title>Is Bonnie Still Hungry Today?</title>
 </head>
 <body>
-
   <div id="banner">
     <h1>Is Bonnie Still Hungry Today?</h1>
   </div>
 
-  <div id="status-box">"update status"</div>
-
-
-  <div id="food-container">
-    <div class="food-box" id="food1">
-      <h2>ORIJEN Kitten Dry Food</h2>
+  <div id="foodBoxes">
+    <div class="foodBox" id="food1">
+      <h3>ORIJEN Kitten Dry Food</h3>
       <img src="Images/Orijenkittendry.png" alt="ORIJEN Kitten Dry Food">
-      <input type="number" id="orijenInput" placeholder="Enter grams">
-      <button onclick="calculateCalories('orijenInput', 4.12)">Submit</button>
+      <input type="number" id="food1Input" placeholder="Enter grams">
+      <button onclick="calculateCalories()">Submit</button>
     </div>
 
-    <div class="food-box" id="food2">
-      <h2>KITCAT Wet Food</h2>
+    <div class="foodBox" id="food2">
+      <h3>KITCAT Wet Food</h3>
       <img src="Images/Kitcatkittenpouch.png" alt="KITCAT Wet Food">
-      <input type="number" id="kitcatInput" placeholder="Enter grams">
-      <button onclick="calculateCalories('kitcatInput', 0.47)">Submit</button>
+      <input type="number" id="food2Input" placeholder="Enter grams">
+      <button onclick="calculateCalories()">Submit</button>
     </div>
 
-    <div class="food-box" id="food3">
-      <h2>ROYAL CANIN Kitten Wet Food</h2>
+    <div class="foodBox" id="food3">
+      <h3>ROYAL CANIN Kitten Wet Food</h3>
       <img src="Images/Royalcaninkittenwet.png" alt="ROYAL CANIN Kitten Wet Food">
-      <input type="number" id="royalcaninInput" placeholder="Enter grams">
-      <button onclick="calculateCalories('royalcaninInput', 1)">Submit</button>
+      <input type="number" id="food3Input" placeholder="Enter grams">
+      <button onclick="calculateCalories()">Submit</button>
     </div>
+  </div>
 
-    
+  <div id="calorieCount">
+    <h2>Bonnie ate <span id="totalCalories">0</span> kcal today</h2>
+  </div>
+
+  <div id="statusBox" class="statusRed">
+    <h2>Bonnie is Still Hungry</h2>
+  </div>
+
 </body>
 </html>
