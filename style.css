@@ -14,7 +14,7 @@ body {
     color: #fff;
     text-align: center;
     padding: 20px;
-    width: 500px
+    width: 666px
   }
   
   #foodBoxes {
@@ -53,19 +53,19 @@ body {
   .statusRed {
     background-color: red;
     color: white;
-    width: 500px
+    width: 666px
   }
   
   .statusYellow {
     background-color: yellow;
     color: black;
-    width: 500px
+    width: 666px
   }
   
   .statusGreen {
     background-color: green;
     color: white;
-    width: 500px
+    width: 666px
   }
   
   button {
@@ -80,6 +80,6 @@ body {
     text-align: center;
     margin-top: 0px;
     padding: 10px;
-    width: 500px
+    width: 666px
     
   }
