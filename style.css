@@ -1,71 +1,85 @@
 
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f0f0f0;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#banner {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-}
-
-#foodBoxes {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.foodBox {
-  max-width: 200px;
-  text-align: center;
-  margin: 10px;
-  padding: 20px;
-  border: 1px solid #ddd;
-  background-color: #fff;
-}
-
-.foodBox img {
-  max-width: 100%;
-  max-height: 350px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-
-#calorieCount {
-  text-align: center;
-  margin-top: 10px;
-}
-
-#statusBox {
-  text-align: center;
-  margin-top: 10px;
-  padding: 10px;
-  font-weight: bold;
-}
-
-.statusHungry{
-  background-color: red;
-  color: white;
-}
-
-.statusMaybe {
-  background-color: yellow;
-  color: black;
-}
-
-.statusFull {
-  background-color: green;
-  color: white;
-}
-
-button {
-  padding: 5px 10px;
-  margin-top: 10px;
-}
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #banner {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 500px
+  }
+  
+  #foodBoxes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .foodBox {
+    max-width: 200px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+  }
+  
+  .foodBox img {
+    max-width: 150%;
+    max-height: 250px;
+    margin-bottom: 10px;
+  }
+  
+  #calorieCount {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  #statusBox {
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  .statusRed {
+    background-color: red;
+    color: white;
+    width: 500px
+  }
+  
+  .statusYellow {
+    background-color: yellow;
+    color: black;
+    width: 500px
+  }
+  
+  .statusGreen {
+    background-color: green;
+    color: white;
+    width: 500px
+  }
+  
+  button {
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  #calculateRemainingWeight { 
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    margin-top: 0px;
+    padding: 10px;
+    width: 500px
+    
+  }

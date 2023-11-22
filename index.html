@@ -4,18 +4,7 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="./style.css" />  
   <script src="javascript.js"></script>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5D4YKKH2DB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-5D4YKKH2DB');
-</script>
-
-  
+ 
   <title>Is Bonnie Still Hungry Today?</title>
 </head>
 <body>
@@ -50,9 +39,16 @@
     <h2>Bonnie ate <span id="totalCalories">0</span> kcal today</h2>
   </div>
 
-  <div id="statusBox" class="statusHungry">
+  <div id="statusBox" class="statusRed">
     <h2>Bonnie is Still Hungry</h2>
   </div>
 
+
+<div id="calculateRemainingWeight" class="feedingSuggestions">
+    <h2>You can still can feed Bonnie: </h2>
+    <p>Orijen Kitten Dry Food: <span id="remainingFood1"></span> grams or</p>
+    <p>Kitcat Wet Food: <span id="remainingFood2"></span> grams or</p>
+    <p>Royal Canin Kitten Wet Food: <span id="remainingFood3"></span> grams</p>
+</div>
 </body>
 </html>
