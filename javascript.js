@@ -10,7 +10,7 @@ function calculateCalories() {
 
     const totalCalories = (food1Grams * orijenCalories) + (food2Grams * kitcatCalories) + (food3Grams * royalCaninCalories);
 
-    document.getElementById('totalCalories').textContent = totalCalories.toFixed(2);
+    document.getElementById('totalCalories').textContent = totalCalories.toFixed();
 
     const statusBox = document.getElementById('statusBox');
     if (totalCalories < 180) {
@@ -30,9 +30,9 @@ function calculateCalories() {
     const remainingFood3Grams = (220 - totalCalories) / royalCaninCalories;
 
   
-    document.getElementById('remainingFood1').textContent = remainingFood1Grams.toFixed(2).toString();
-    document.getElementById('remainingFood2').textContent = remainingFood2Grams.toFixed(2).toString();
-    document.getElementById('remainingFood3').textContent = remainingFood3Grams.toFixed(2).toString();
+    document.getElementById('remainingFood1').textContent = remainingFood1Grams.toFixed().toString();
+    document.getElementById('remainingFood2').textContent = remainingFood2Grams.toFixed().toString();
+    document.getElementById('remainingFood3').textContent = remainingFood3Grams.toFixed().toString();
 }
 
 
