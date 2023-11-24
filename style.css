@@ -16,6 +16,12 @@ body {
     padding: 20px;
     width: 666px
   }
+
+ #instructions {
+    background-color: white;
+    text-align: center;
+    width: 705px 
+  }
   
   #foodBoxes {
     display: flex;
