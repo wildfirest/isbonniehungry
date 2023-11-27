@@ -2,7 +2,7 @@
 function calculateCalories() {
     const orijenCalories = 4.12;
     const kitcatCalories = 0.47;
-    const royalCaninCalories = 1;
+    const royalCaninCalories = 0.952;
 
     const food1Grams = parseFloat(document.getElementById('food1Input').value) || 0;
     const food2Grams = parseFloat(document.getElementById('food2Input').value) || 0;
