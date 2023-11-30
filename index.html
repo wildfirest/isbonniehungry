@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="./style.css" />  
   <script src="javascript.js"></script>
-
-  <!-- Google tag (gtag.js) -->
+ 
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-5D4YKKH2DB"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -14,18 +14,21 @@
 
   gtag('config', 'G-5D4YKKH2DB');
 </script>
- 
+
+
   <title>Is Bonnie Still Hungry Today?</title>
 </head>
+
 <body onload="calculateCalories()">
   <div id="banner">
     <h1>Is Bonnie Still Hungry Today?</h1>
   </div>
 
-  <div id="instructions"><h2></h2>
-    <p>Key in how much food Bonnie have been fed today</p>
+  <div id="instructions">
+    <h2></h2>
+    <p>Please key in how much food Bonnie have been fed today</p>
   </div>
-  
+
   <div id="foodBoxes">
     <div class="foodBox" id="food1">
       <h3>ORIJEN Kitten Dry Food</h3>
@@ -36,7 +39,7 @@
 
     <div class="foodBox" id="food2">
       <h3>KITCAT Petite Pouch Wet Food</h3>
-      <img src="Images/Kitcatkittenpouch.png" alt="KITCAT Petite Pouch Wet Food">
+      <img src="Images/Kitcatkittenpouch.png" alt="KITCAT Wet Food">
       <input type="number" id="food2Input" placeholder="Enter grams">
       <button onclick="calculateCalories()">Calculate</button>
     </div>
@@ -45,6 +48,20 @@
       <h3>ROYAL CANIN Kitten Wet Food</h3>
       <img src="Images/Royalcaninkittenwet.png" alt="ROYAL CANIN Kitten Wet Food">
       <input type="number" id="food3Input" placeholder="Enter grams">
+      <button onclick="calculateCalories()">Calculate</button>
+    </div>
+
+    <div class="foodBox" id="food4">
+      <h3>FANCY FEAST Classic</h3>
+      <img src="Images/Fancyfeastclassic.png" alt="FANCY FEAST Classic">
+      <input type="number" id="food4Input" placeholder="Enter grams">
+      <button onclick="calculateCalories()">Calculate</button>
+    </div>
+
+    <div class="foodBox" id="food5">
+      <h3>FANCY FEAST Gravy Lovers</h3>
+      <img src="Images/Fancyfeastgravylovers.png" alt="FANCY FEAST Gravy Lovers">
+      <input type="number" id="food5Input" placeholder="Enter grams">
       <button onclick="calculateCalories()">Calculate</button>
     </div>
   </div>
@@ -60,12 +77,14 @@
 
 <div id="calculateRemainingWeight" class="feedingSuggestions">
     <h2>You can still can feed Bonnie: </h2>
-    <p>Orijen Kitten Dry Food: <span id="remainingFood1"></span> grams or</p>
-    <p>Kitcat Wet Food: <span id="remainingFood2"></span> grams or</p>
-    <p>Royal Canin Kitten Wet Food: <span id="remainingFood3"></span> grams</p>
+    <p>Orijen Kitten Dry Food: <u><span id="remainingFood1"></span>g</u> or</p>
+    <p>Kitcat Wet Food: <u><span id="remainingFood2"></span>g</u> or</p>
+    <p>Royal Canin Kitten Wet Food: <u><span id="remainingFood3"></span>g</u></p>
+    <p>FANCY FEAST Classic: <u><span id="remainingFood4"></span>g</u></p>
+    <p>FANCY FEAST Gravy Lovers: <u><span id="remainingFood5"></span>g</u></p>
+    
 </div>
 
-<p>Who is <a href="https://wildfirest.github.io/Bonnieprofile/">Bonnie</a> ?</p>
-
+<p>Who is <a href="https://wildfirest.github.io/Bonnieprofile/">Bonnie?</a></p>
 </body>
 </html>

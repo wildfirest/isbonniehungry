@@ -1,6 +1,7 @@
 
+
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: sans-serif;
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
@@ -8,25 +9,37 @@ body {
     flex-direction: column;
     align-items: center;
   }
-  
+
+    /* @media screen and (max-width: 600px) {
+    #banner {
+      width: 100px;
+    }
+  } */
+
+
+
   #banner {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 20px;
-    width: 666px
-  }
-
- #instructions {
-    background-color: white;
-    text-align: center;
-    width: 705px 
+    width: 666px;
+    
   }
   
+  #instructions {
+    background-color: white;
+    text-align: center;
+    width: 705px
+    
+  }
+
+
   #foodBoxes {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    
   }
   
   .foodBox {
@@ -36,17 +49,20 @@ body {
     padding: 10px;
     border: 1px solid #ddd;
     background-color: #fff;
+    border-radius: 12px;
   }
   
   .foodBox img {
-    max-width: 150%;
+    max-width: 100%;
     max-height: 250px;
     margin-bottom: 10px;
+    
   }
   
   #calorieCount {
     text-align: center;
     margin-top: 10px;
+    
   }
   
   #statusBox {
@@ -54,6 +70,7 @@ body {
     margin-top: 10px;
     padding: 10px;
     font-weight: bold;
+    
   }
   
   .statusRed {
@@ -78,7 +95,12 @@ body {
     padding: 5px 10px;
     margin-top: 10px;
     cursor: pointer;
+    border-radius: 12px;
+    
+    
+    
   }
+  
   
   #calculateRemainingWeight { 
     background-color: #333;
@@ -86,6 +108,8 @@ body {
     text-align: center;
     margin-top: 0px;
     padding: 10px;
-    width: 680px
+    width: 680px;
+    margin-bottom: 10px;
     
   }
+
