@@ -1,6 +1,6 @@
 
 function calculateCalories() {
-    const orijenCalories = 4.12;
+    const orijenCalories = 3.98;
     const kitcatCalories = 0.47;
     const royalCaninCalories = 1;
     const fancyFeastClassic = 1.09;
